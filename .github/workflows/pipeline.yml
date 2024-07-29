@@ -2,7 +2,7 @@ name: pipeline
 on: [push]
 jobs:
   hello-world:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      name: hello world
+    - name: Say hello
       run: echo 'hello world'
