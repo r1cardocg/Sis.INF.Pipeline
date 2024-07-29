@@ -1,0 +1,13 @@
+name: pipeline
+  push:
+    branches:
+      node
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/setup-node@v4
+      with:
+      node-version: 18
+    - name: Say hello
+      run: echo 'hello world'
